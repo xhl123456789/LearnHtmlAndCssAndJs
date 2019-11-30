@@ -1,0 +1,119 @@
+<html>
+	<head>
+		form
+		</head>
+	
+	<body>
+		<form action="01.jsp" method="get"><!--提交方式为get,提交到01.jsp-->
+		<table width="700" align="center" border="5"><!--创建一个位于中间-->
+			<tr>
+				<td colspan="3" align="center">用户注册</td><!-- 表示占两个单元格-->
+				</tr>
+			
+			<tr>
+				<td>用户名：</td><!--表示在这一行分一个框给自己-->
+				<td>
+				<input type=text name="ueserName" size="10" maxlength="20">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>密码:</td>
+				<td>
+					<input type=password name="pwd" size="15" maxlength="12">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>密码确认:</td>
+				<td>
+					<input type=password name="pwd2" size="15" maxlength="12">
+				</td>
+			</tr>
+			
+			<tr>
+			<td>性别</td>
+			<td>
+			<input type=radio name="sex" value="male" checked>男
+			<input type=radio name="sex" value="female" checked>女<!--两个变量名要一致不然两个都可以选中-->
+			</td>
+			<tr>
+			
+			<tr>
+				<td>你感兴趣</td>
+				<td>
+				<input type="checkbox" name="interest" value="vc" checked>vc
+				<input type="checkbox" name="interest" value="vb">vb
+				<input type="checkbox" name="interest" value="vfoxpro">vf
+				<input type="checkbox" name="interest" value="vjava" >vj
+				<br>
+				<input type="checkbox" name="interest" value="vb">vb
+				<input type="checkbox" name="interest" value="vfoxpro">vf
+				<input type="checkbox" name="interest" value="vjava" >vj
+				</td>
+				</tr>
+				
+				<!--必选-->
+				<input type="hidden" name="interest" value="jsp">
+				
+				<tr>
+					<td>你感兴趣</td>
+					<td>
+						<select name="interest2" size="8" multiple><!--multiple表示可以多选-->
+						<option value="vc" selected>VC</option><!--selected表示默认被选中-->
+						<option value="vb">VB</option>
+						<option value="vfoxpro">VF</option>
+						<option value="vjava">Vjava</option>
+						<option value="bc">BC</option>
+						<option value="cool">COOL</option>
+					</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>你来自</td>
+					<td>
+						<select name="province">
+						<option value=0 selected>请选择</option>
+						<option value=34>安徽</option>
+						<option value=50>重庆</option>
+						<option value=11>北京</option>
+						<option value=11>北京</option>
+						<option value=11>北京</option>
+						<option value=34>安徽</option>
+						<option value=34>安徽</option>
+						<option value=34>安徽</option>
+						<option value=34>安徽</option>
+						<option value=34>安徽</option>
+					</td>
+					</tr>
+					
+				<tr>
+					<td>自我介绍</td>
+					<td>
+						<textarea rows="12" cols="80" name="intro" wrap="hard"></textarea><!--cols表示80列 name=intro表示变量名 wrap表示硬换行-->
+						</td>
+						</tr>
+					<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="提交"> <!--表示整个表提交-->
+						<input type="reset" value="重置"><!--整个表重置-->
+						<input type="botton" value="ok">
+						</td>
+						</td>
+						</tr>
+						
+				</table>
+			</form>
+		</body>
+</html>
+			
+				
+					
+			
+			
+			
+			
+			
+			
